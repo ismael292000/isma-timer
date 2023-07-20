@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+
+    <title>Timer</title>
+</head>
+<body>
+    
+    <div class="container">
+
+        <h1>Timer</h1>
+        <div class="display_area">
+            <input type="number" id="inputHours" placeholder="hours">
+            <input type="number" id="inputMinutes" placeholder="minutes">
+            <input type="number" id="inputSeconds" placeholder="seconds">
+        </div>
+        <div class="btns_area">
+            <button id="btnStart" onclick="startCounting()">Start</button>
+            <button id="btnPause" onclick="pauseCounting()">Pause</button>
+            <button id="btnStop" onclick="stopCounting()">Stop</button>
+        </div>
+        <p id="currentTime">Current time: </p>
+        <p id="info"></p>
+        <audio src="assets/ring.wav" id="audio"></audio>
+
+    </div>
+
+    <script src="js/index.js"></script>
+</body>
+</html>
